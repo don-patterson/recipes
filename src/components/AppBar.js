@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const AppBar = props => {
-  const {isDrawerOpen, setDrawerOpen, recipeName} = props;
+  const {isDrawerOpen, setDrawerOpen} = props;
   const classes = useStyles();
 
   return (
@@ -31,7 +31,6 @@ const AppBar = props => {
         </IconButton>
         <Typography variant="h6" color="inherit" noWrap>
           Recipes
-          {recipeName && ` > ${recipeName}`}
         </Typography>
       </Toolbar>
     </MuiAppBar>

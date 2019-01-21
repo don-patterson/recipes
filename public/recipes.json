@@ -2,19 +2,19 @@
   "recipes": [{
     "title": "Dill Pickle Soup",
     "ingredients": [
-        {"name": "chicken broth", "x": "5.5", "units": "cups", "prep": ""},
-        {"name": "potatoes", "x": "6.5", "units": "cups", "prep": "russet; peeled and cubed"},
-        {"name": "carrots", "x": "2", "units": "cups", "prep": "chopped"},
-        {"name": "butter", "x": "0.5", "units": "cups", "prep": "unsalted"},
-        {"name": "pickles", "x": "1", "units": "cups", "prep": "dill; chopped"},
-        {"name": "flour", "x": "0.5", "units": "cups", "prep": "all-purpose"},
-        {"name": "sour cream", "x": "1", "units": "cups", "prep": ""},
-        {"name": "water", "x": "0.25", "units": "cups", "prep": ""},
-        {"name": "pickle juice", "x": "2", "units": "cups", "prep": ""},
-        {"name": "Old Bay seasoning", "x": "1.5", "units": "teaspoons", "prep": ""},
-        {"name": "salt", "x": "0.5", "units": "teaspoons", "prep": ""},
-        {"name": "black pepper", "x": "0.5", "units": "teaspoons", "prep": ""},
-        {"name": "cayenne pepper", "x": "0.25", "units": "teaspoons", "prep": ""}
+        {"name": "chicken broth", "x": "5.5", "units": "cup", "prep": ""},
+        {"name": "potatoes", "x": "6.5", "units": "cup", "prep": "russet; peeled and cubed"},
+        {"name": "carrots", "x": "2", "units": "cup", "prep": "chopped"},
+        {"name": "butter", "x": "0.5", "units": "cup", "prep": "unsalted"},
+        {"name": "pickles", "x": "1", "units": "cup", "prep": "dill; chopped"},
+        {"name": "flour", "x": "0.5", "units": "cup", "prep": "all-purpose"},
+        {"name": "sour cream", "x": "1", "units": "cup", "prep": ""},
+        {"name": "water", "x": "0.25", "units": "cup", "prep": ""},
+        {"name": "pickle juice", "x": "2", "units": "cup", "prep": ""},
+        {"name": "Old Bay seasoning", "x": "1.5", "units": "teaspoon", "prep": ""},
+        {"name": "salt", "x": "0.5", "units": "teaspoon", "prep": ""},
+        {"name": "black pepper", "x": "0.5", "units": "teaspoon", "prep": ""},
+        {"name": "cayenne pepper", "x": "0.25", "units": "teaspoon", "prep": ""}
     ],
     "directions": [
         "In a large pot, combine [chicken broth], [potatoes], [carrots], and [butter]. Bring to a boil and cook until the potatoes are tender.",
