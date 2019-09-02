@@ -1,23 +1,22 @@
 import React from "react";
-import {Typography} from "@material-ui/core";
+import Recipe from "../components/Recipe";
 
-const AsianDumplingSauce = () => (
-  <div>
-    <Typography variant="h4">Ingredients</Typography>
-    <ul>
-      <li>1/4 cup soy sauce</li>
-      <li>1/4 cup rice wine vinegar</li>
-      <li>1 tablespoon honey</li>
-      <li>2 cloves minced garlic</li>
-      <li>2 teaspoons minced ginger</li>
-      <li>1 teaspoon sesame seeds</li>
-      <li>1 teaspoon sesame oil</li>
-    </ul>
-    <Typography variant="h4">Directions</Typography>
-    <ol>
-      <li>mix together</li>
-    </ol>
-  </div>
-);
+const sections = [
+  {
+    type: "ingredients",
+    items: [
+      "1/4 cup soy sauce",
+      "1/4 cup rice wine vinegar",
+      "1 tablespoon honey",
+      "2 cloves minced garlic",
+      "2 teaspoons minced ginger",
+      "1 teaspoon sesame seeds",
+      "1 teaspoon sesame oil",
+    ],
+  },
+  {type: "directions", items: ["mix together"]},
+];
+
+const AsianDumplingSauce = () => <Recipe sections={sections} />;
 
 export default AsianDumplingSauce;

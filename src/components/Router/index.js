@@ -46,7 +46,9 @@ const Router = () => (
       <Route path="/SoySrirachaSauce" component={SoySrirachaSauce} />
       <Route path="/VidaliaOnionDip" component={VidaliaOnionDip} />
 
-      <Route exact path="/">Pick a recipe from the menu!</Route>
+      <Route exact path="/">
+        Pick a recipe from the menu!
+      </Route>
       <Route>Recipe not found!</Route>
     </Switch>
   </HashRouter>
