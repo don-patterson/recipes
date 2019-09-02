@@ -7,6 +7,8 @@ import {
 } from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
 
+import {recipes} from "../recipes";
+
 const useStyles = makeStyles(theme => ({
   list: {
     width: 240,
@@ -28,9 +30,16 @@ const Drawer = props => {
         onKeyDown={closeDrawer}
       >
         <List className={classes.list}>
-          <ListItem button component="a" href="#AsianDumplingSauce">
-            <ListItemText primary="AsianDumplingSauce" />
-          </ListItem>
+          {recipes.map(recipe => (
+            <ListItem
+              key={recipe.key}
+              button
+              component="a"
+              href={`#${recipe.key}`}
+            >
+              <ListItemText primary={recipe.name} />
+            </ListItem>
+          ))}
           <ListItem button component="a" href="#BroccoliCasserole">
             <ListItemText primary="BroccoliCasserole" />
           </ListItem>

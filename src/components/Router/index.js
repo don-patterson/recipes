@@ -1,7 +1,9 @@
 import React from "react";
 import {HashRouter, Route, Switch} from "react-router-dom";
 
-import AsianDumplingSauce from "../../recipes/AsianDumplingSauce";
+import Recipe from "../Recipe";
+import {recipes} from "../../recipes";
+
 import BroccoliCasserole from "../../recipes/BroccoliCasserole";
 import BroccoliSlawSalad from "../../recipes/BroccoliSlawSalad";
 import ButternutSquashCassrole from "../../recipes/ButternutSquashCassrole";
@@ -22,7 +24,15 @@ import VidaliaOnionDip from "../../recipes/VidaliaOnionDip";
 const Router = () => (
   <HashRouter hashType="noslash">
     <Switch>
-      <Route path="/AsianDumplingSauce" component={AsianDumplingSauce} />
+      {recipes.map(recipe => (
+        <Route
+          key={recipe.key}
+          path={`/${recipe.key}`}
+          render={() => (
+            <Recipe name={recipe.name} sections={recipe.sections} />
+          )}
+        />
+      ))}
       <Route path="/BroccoliCasserole" component={BroccoliCasserole} />
       <Route path="/BroccoliSlawSalad" component={BroccoliSlawSalad} />
       <Route
