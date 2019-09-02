@@ -2,7 +2,6 @@ import React from "react";
 import {MuiThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import {purple} from "@material-ui/core/colors";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import {HashRouter} from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -11,17 +10,17 @@ const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
   },
+  mixins: {
+    toolbar: {
+      minHeight: 48,
+    },
+  },
 });
 
-const withTheme = Component => {
-  return props => (
-    <MuiThemeProvider theme={theme}>
-      <CssBaseline />
-      <HashRouter hashType="noslash">
-        <Component {...props} />
-      </HashRouter>
-    </MuiThemeProvider>
-  );
-};
-
+const withTheme = Component => props => (
+  <MuiThemeProvider theme={theme}>
+    <CssBaseline />
+    <Component {...props} />
+  </MuiThemeProvider>
+);
 export {withTheme};

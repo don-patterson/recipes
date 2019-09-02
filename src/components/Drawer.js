@@ -36,7 +36,7 @@ const Drawer = props => {
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
-          <ListItem button component="a" href="#test">
+          <ListItem button component="a" href="#example">
             <ListItemIcon>
               <Help />
             </ListItemIcon>
