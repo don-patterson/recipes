@@ -360,7 +360,40 @@ const recipes = [
       },
     ],
   },
-  /*
+  {
+    key: "festive-turnip",
+    name: "Festive Turnip",
+    sections: [
+      {
+        type: "ingredients",
+        items: [
+          "1 large rutabaga",
+          "2 cooking apples (i.e. Cortland)",
+          "2 tablespoons butter",
+          "1/4 cup brown sugar",
+          "a dash of cinnamon",
+        ],
+      },
+      {
+        type: "ingredients",
+        items: ["1/3 cup brown sugar", "1/3 cup flour", "2 tablespoons butter"],
+      },
+      {
+        type: "directions",
+        items: [
+          "Peel and dice the turnip, and boil until tender.",
+          "Drain, and mash with butter.",
+          "Peel and slice the apples, and mix with brown sugar and cinnamon.",
+          "In a greased baking dish, spread 1/2 of the turnip.",
+          "Add the apple mixuture ad the next layer.",
+          "Add the remaining turnip as the next layer.",
+          "In a small bowl, mix brown sugar, flour, and butter until crumbly.",
+          "Sprinkle on top of turnip.",
+          "Bake for 1 hour at 350F.",
+        ],
+      },
+    ],
+  },
   {
     key: "",
     name: "",
@@ -375,7 +408,76 @@ const recipes = [
       },
     ],
   },
-  */
+  {
+    key: "",
+    name: "",
+    sections: [
+      {
+        type: "ingredients",
+        items: [],
+      },
+      {
+        type: "directions",
+        items: [],
+      },
+    ],
+  },
+  {
+    key: "",
+    name: "",
+    sections: [
+      {
+        type: "ingredients",
+        items: [],
+      },
+      {
+        type: "directions",
+        items: [],
+      },
+    ],
+  },
+  {
+    key: "",
+    name: "",
+    sections: [
+      {
+        type: "ingredients",
+        items: [],
+      },
+      {
+        type: "directions",
+        items: [],
+      },
+    ],
+  },
+  {
+    key: "",
+    name: "",
+    sections: [
+      {
+        type: "ingredients",
+        items: [],
+      },
+      {
+        type: "directions",
+        items: [],
+      },
+    ],
+  },
+  {
+    key: "",
+    name: "",
+    sections: [
+      {
+        type: "ingredients",
+        items: [],
+      },
+      {
+        type: "directions",
+        items: [],
+      },
+    ],
+  },
 ];
 
 export {recipes};
