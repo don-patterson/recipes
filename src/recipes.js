@@ -236,6 +236,62 @@ const recipes = [
       },
     ],
   },
+  {
+    key: "dak-galbi",
+    name: "Dak Galbi",
+    sections: [
+      {
+        type: "ingredients",
+        items: [
+          "2 tbsp red pepper powder",
+          "3 tbsp red pepper paste",
+          "4 tsp curry powder",
+          "3 cloves minced garlic",
+          "3 tbsp soy sauce",
+          "2 tbsp cooking wine",
+          "2 tbsp minced ginger",
+          "black pepper",
+        ],
+      },
+      {
+        type: "ingredients",
+        items: [
+          "2 chicken breasts",
+          "1 tbsp cooking wine",
+          "2 cloves minced garlic",
+          "black pepper",
+        ],
+      },
+      {
+        type: "ingredients",
+        items: [
+          "4 green onions",
+          "3 onions",
+          "1/2 head of cabbage",
+          "2 sweet potatoes",
+          "1 package of Asian rice cakes (650g)",
+          "water",
+          "olive oil",
+          "sesame oil",
+          "sesame seeds",
+        ],
+      },
+      {
+        type: "directions",
+        items: [
+          "Chop up chicken, mix with the chicken ingredients, set aside",
+          "Soak rice cakes until thawed",
+          "Mix up sauce ingredients in a bowl, add 1/3 of this sauce to the marinating chicken, and set aside",
+          "Chop onions, cabbage, and sweet potato into thin, bite-sized pieces",
+          "Pour equal amounts of sesame and olive oil in a hot wok",
+          "Fry cabbage, onion, sweet potato, and rice cakes (cover and add water) until they are tender",
+          "Add in chicken and remaining sauce",
+          "Near the end, add in chopped green onion",
+          "Add sesame seeds",
+        ],
+      },
+    ],
+  },
   /*
   {
     key: "",
