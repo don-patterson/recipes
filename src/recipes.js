@@ -508,30 +508,48 @@ const recipes = [
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "soy-sriracha-sauce",
+    name: "Soy Sriracha Sauce",
     sections: [
       {
         type: "ingredients",
-        items: [],
+        items: [
+          "1 tsp sesame oil",
+          "3 tbsp soy sauce",
+          "1 tbsp grainy mustard",
+          "1+ tsp sriracha sauce",
+        ],
       },
       {
         type: "directions",
-        items: [],
+        items: ["mix together"],
       },
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "vidalia-onion-dip",
+    name: "Vidalia Onion Dip",
     sections: [
       {
         type: "ingredients",
-        items: [],
+        items: [
+          "8 oz cream cheese",
+          "1/2 cup mayonaise",
+          "1 cup vidalia onion, finely chopped",
+          "1/4 cup parmesan cheese",
+          "1+ tsp Frank's Red Hot",
+          "salt",
+          "pepper",
+          "paprika",
+        ],
       },
       {
         type: "directions",
-        items: [],
+        items: [
+          "Mix together, and spread in a shallow baking dish.",
+          "Sprinkle with paprika.",
+          "Bake for 40 minutes at 350F.",
+        ],
       },
     ],
   },

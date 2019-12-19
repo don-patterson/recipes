@@ -4,9 +4,6 @@ import {HashRouter, Route, Switch} from "react-router-dom";
 import Recipe from "../Recipe";
 import {recipes} from "../../recipes";
 
-import SoySrirachaSauce from "../../recipes/SoySrirachaSauce";
-import VidaliaOnionDip from "../../recipes/VidaliaOnionDip";
-
 const Router = () => (
   <HashRouter hashType="noslash">
     <Switch>
@@ -19,8 +16,6 @@ const Router = () => (
           )}
         />
       ))}
-      <Route path="/SoySrirachaSauce" component={SoySrirachaSauce} />
-      <Route path="/VidaliaOnionDip" component={VidaliaOnionDip} />
 
       <Route exact path="/">
         Pick a recipe from the menu!

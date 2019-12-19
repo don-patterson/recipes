@@ -8,7 +8,7 @@ import {
 import {Menu} from "@material-ui/icons";
 import {makeStyles} from "@material-ui/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   menuButton: {
     marginLeft: -12,
     martinRight: 20,
