@@ -449,16 +449,33 @@ const recipes = [
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "minty-cookies",
+    name: "Minty Cookies",
     sections: [
       {
         type: "ingredients",
-        items: [],
+        items: [
+          "1 cup butter flavored Crisco",
+          "1 package (8 oz) cream cheese, softened",
+          "3/4 cup granulated sugar",
+          "1/2 cup firmly packed brown sugar",
+          "1 tsp vanilla",
+          "2 cups all-purpose flour",
+          "1 3/4 cups mint chocolate chips",
+        ],
       },
       {
         type: "directions",
-        items: [],
+        items: [
+          "Heat oven to 375F",
+          "Combine Crisco, cream cheese, sugars and vanilla in large bowl",
+          "Beat at medium speed of electric mixer until well blended",
+          "Mix flour into creamed mixture at low speed until just blended",
+          "Stir in mint chocolate chips",
+          "Form balls of 3-4cm diameter, and press slightly onto baking sheet",
+          "Bake for 11 minutes, or until lightly browned",
+          "Cool for 2 minutes on baking sheet, then move to cooling rack",
+        ],
       },
     ],
   },
