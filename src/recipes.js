@@ -109,18 +109,56 @@ const recipes = [
       },
     ],
   },
-  /*
   {
-    key: "template",
-    name: "Template",
+    key: "chicken-broccoli-casserole",
+    name: "Chicken Broccoli Casserole",
     sections: [
       {
         type: "ingredients",
-        items: ["bullted list"],
+        items: [
+          "500g broccoli, chopped (4ish cups)",
+          "1 large onion, chopped",
+          "2 stalks celery, chopped",
+          "1-2 cups chicken broth",
+          "1 can (~150ml) water chestnuts, drained",
+          "1 can cream of mushroom soup",
+          "1 can sliced mushrooms, drained",
+          "1 cup uncooked rice (2ish cups cooked)",
+          "2-3 chicken breasts",
+          "1 cup shredded cheddar cheese",
+          "1/4 cup butter",
+          "1 tbsp garlic powder",
+          "salt, pepper",
+        ],
       },
       {
         type: "directions",
-        items: ["numbered list"],
+        items: [
+          "Cube and cook the chicken separately",
+          "Cook the rice separately",
+          "Melt the butter in a large skillet and saute the onion and celery",
+          "Slowly add chicken broth to the saute and continue until celery is somewhat tender",
+          "Stir in the soup and remaining chicken broth",
+          "Add the broccoli, water chestnuts, mushrooms, rice, and chicken",
+          "Add garlic powder, salt, and pepper",
+          "Cook for about 5 minutes",
+          "Mix in the cheese, spread in a 9x13 baking dish and bake for 30 minutes at 325F",
+        ],
+      },
+    ],
+  },
+  /*
+  {
+    key: "",
+    name: "",
+    sections: [
+      {
+        type: "ingredients",
+        items: [],
+      },
+      {
+        type: "directions",
+        items: [],
       },
     ],
   },
