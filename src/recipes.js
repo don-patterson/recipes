@@ -148,8 +148,8 @@ const recipes = [
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "chili",
+    name: "Chili",
     sections: [
       {
         type: "ingredients",
@@ -185,6 +185,53 @@ const recipes = [
           "Add chili beans, diced tomatoes, tomato paste, all chopped veggies, bouillon, beer, and remaining spices",
           "Stir to blend, then cover and simmer over low heat for 2 hours. Stir occasionally",
           "Taste, and add salt/pepper/chili powder, if necessary",
+        ],
+      },
+    ],
+  },
+  {
+    key: "christmas-morning-saver",
+    name: "Christmas Morning Saver",
+    sections: [
+      {
+        type: "ingredients",
+        items: [
+          "~16 slices of bread, crust removed",
+          "slices of ham or Canadian back bacon",
+          "slices of sharp cheddar cheese",
+          "6 eggs",
+          "1/4 cup minced onion",
+          "1/4 cup green pepper, finely chopped",
+          "1/2 teaspoon pepper",
+          "1/2 teaspoon salt",
+          "1 teaspoon dry mustard",
+          "2 teaspoons Worchestershire sauce",
+          "3 cups milk",
+          "Tabasco sauce to taste",
+          "1/2 cup butter",
+          "Special K or similar dry cereal",
+        ],
+      },
+      {
+        type: "directions",
+        items: [
+          'Butter a 9"x13" glass baking dish, and cover with a layer of bread slices.',
+          "Cover the bread layer with slices of ham.",
+          "Cover the ham layer with slices of cheese.",
+          "Finish with a layer of bread, making a giant sandwich.",
+          "In a bowl, beat eggs, salt, and pepper.",
+          "Add dry mustard, onion, green pepper, Worchestershire, milk, and Tabasco.",
+          "Pour the egg mixture over the sandwiches.",
+          "Cover and refrigerate overnight.",
+        ],
+      },
+      {
+        type: "directions",
+        items: [
+          "Melt 1/2 cup of butter, and pour over egg sandwiches.",
+          "Cover with Special K.",
+          "Bake for 45 minutes, at 325F.",
+          "Let stand for 10 minutes before serving.",
         ],
       },
     ],
