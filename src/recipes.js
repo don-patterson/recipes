@@ -71,6 +71,44 @@ const recipes = [
       },
     ],
   },
+  {
+    key: "butternut-squash-casserole",
+    name: "Butternut Squash Casserole",
+    sections: [
+      {
+        type: "ingredients",
+        items: [
+          "1 large onion",
+          "2 stalks celery",
+          "2 carrots",
+          "2 potatoes",
+          "1 butternut squash",
+          "1L chicken broth",
+          ".5t cayenne pepper",
+          "1T yellow curry powder",
+          ".5C sour cream",
+          "salt",
+          "pepper",
+          "butter",
+        ],
+      },
+      {
+        type: "directions",
+        items: [
+          "Roast the butternut squash (whole, peel on) for 1 hour at 375F",
+          "Finely chop all vegetables",
+          "Melt some butter in a large pot, and fry the vegetables until lightly browned (~5 minutes)",
+          "Pour in enough of the chicken broth to cover the vegetables",
+          "Add cayenne, curry, salt, pepper",
+          "Add the butternut squash",
+          "Bring to a boil, reduce heat, cover, simmer for ~45 minutes",
+          "Blend soup until smooth",
+          "Add remaining chicken broth until desired consistency",
+          "Mix in sour cream",
+        ],
+      },
+    ],
+  },
   /*
   {
     key: "template",
