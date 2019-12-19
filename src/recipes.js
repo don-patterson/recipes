@@ -395,16 +395,27 @@ const recipes = [
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "grilled-sweet-potato",
+    name: "Grilled Sweet Potato",
     sections: [
       {
         type: "ingredients",
-        items: [],
+        items: [
+          "2 sweet potatoes",
+          "2 tbsp olive oil",
+          "2 tbsp brown sugar",
+          "1 tbsp cumin",
+          "1 tsp cayenne",
+          "salt and pepper",
+        ],
       },
       {
         type: "directions",
-        items: [],
+        items: [
+          "Cut up potatoes, and mix all ingredients in a bowl",
+          "Wrap in aluminium foil pouch",
+          "Cook on BBQ for ~25 minutes, turning 2-3 times throughout",
+        ],
       },
     ],
   },
