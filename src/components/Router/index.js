@@ -4,7 +4,6 @@ import {HashRouter, Route, Switch} from "react-router-dom";
 import Recipe from "../Recipe";
 import {recipes} from "../../recipes";
 
-import DillPickleSoup from "../../recipes/DillPickleSoup";
 import EggplantMincedPork from "../../recipes/EggplantMincedPork";
 import FestiveTurnip from "../../recipes/FestiveTurnip";
 import GrilledSweetPotato from "../../recipes/GrilledSweetPotato";
@@ -26,7 +25,6 @@ const Router = () => (
           )}
         />
       ))}
-      <Route path="/DillPickleSoup" component={DillPickleSoup} />
       <Route path="/EggplantMincedPork" component={EggplantMincedPork} />
       <Route path="/FestiveTurnip" component={FestiveTurnip} />
       <Route path="/GrilledSweetPotato" component={GrilledSweetPotato} />
