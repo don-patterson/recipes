@@ -46,6 +46,47 @@ const recipes = [
       },
     ],
   },
+  {
+    key: "broccoli-slaw-salad",
+    name: "Broccoli Slaw Salad",
+    sections: [
+      {
+        type: "ingredients",
+        items: [
+          "2 packs of beef Mr. Noodles",
+          "4 green onions",
+          "1 cup roasted/salted sunflower seeds",
+          "1/2 cup sugar",
+          "3/4 cup oil",
+          "1/3 cup vinegar",
+        ],
+      },
+      {
+        type: "directions",
+        items: [
+          "smash up the dry noodles",
+          "chop the green onions",
+          "mix everything together",
+        ],
+      },
+    ],
+  },
+  /*
+  {
+    key: "template",
+    name: "Template",
+    sections: [
+      {
+        type: "ingredients",
+        items: ["bullted list"],
+      },
+      {
+        type: "directions",
+        items: ["numbered list"],
+      },
+    ],
+  },
+  */
 ];
 
 export {recipes};
