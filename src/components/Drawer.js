@@ -40,9 +40,6 @@ const Drawer = props => {
               <ListItemText primary={recipe.name} />
             </ListItem>
           ))}
-          <ListItem button component="a" href="#ShrimpSquashRisotto">
-            <ListItemText primary="ShrimpSquashRisotto" />
-          </ListItem>
           <ListItem button component="a" href="#SoySrirachaSauce">
             <ListItemText primary="SoySrirachaSauce" />
           </ListItem>

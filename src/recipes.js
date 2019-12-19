@@ -480,16 +480,30 @@ const recipes = [
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "shrimp-squash-risotto",
+    name: "Shrimp Squash Risotto",
     sections: [
       {
         type: "ingredients",
-        items: [],
+        items: [
+          "2 packs of PC 4 cheese risotto (2x170g)",
+          "1 butternut squash (~1 pound, cubed)",
+          "25 shrimp",
+          "garlic (or garlic powder)",
+          "salt",
+          "pepper",
+          "butter",
+        ],
       },
       {
         type: "directions",
-        items: [],
+        items: [
+          "Cut butternut squash into bite-size cubes (1-2cm), toss in oil, and roast for ~40 minutes at 375F",
+          "Make risotto according to package instructions (basically like KD)",
+          "Toss shrimp in oil, salt, pepper, and minced garlic (or garlic powder)",
+          "Fry shrimp until fully cooked",
+          "Mix everything together, and add pepper to taste",
+        ],
       },
     ],
   },
