@@ -420,16 +420,31 @@ const recipes = [
     ],
   },
   {
-    key: "",
-    name: "",
+    key: "leek-potato-soup",
+    name: "Leek Potato Soup",
     sections: [
       {
         type: "ingredients",
-        items: [],
+        items: [
+          "2+ tbsp butter",
+          "2 leeks, chopped",
+          "1 large onion, chopped",
+          "5 cups potatoes, peeled and cubed",
+          "4 cups chicken broth",
+          "1 cup blend cream (10%)",
+          "1+ teaspoon garlic powder",
+          "salt and pepper",
+        ],
       },
       {
         type: "directions",
-        items: [],
+        items: [
+          "Melt butter in a pot over medium heat",
+          "Cook and stir leeks and onion until vegetables are tender, about 5 minutes",
+          "Add potatoes and chicken broth and simmer until potatoes are tender, about 20 minutes",
+          "Add cream, and simmer until slightly thickened, about 15 minutes",
+          "Blend (optional) and add garlic powder, salt, and pepper, and simmer for another 5 minutes",
+        ],
       },
     ],
   },
