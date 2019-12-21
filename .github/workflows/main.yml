@@ -1,0 +1,16 @@
+name: Deploy
+
+on:
+  push:
+    branches: master
+
+jobs:
+  deploy-to-gh-pages:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '13.x'
+    - run: npm ci
+    - run: npm run deploy
