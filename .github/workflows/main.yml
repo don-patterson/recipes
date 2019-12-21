@@ -8,9 +8,12 @@ jobs:
   deploy-to-gh-pages:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
         node-version: '13.x'
     - run: npm ci
+    - run: env
+    - run: git config user.name "deploy action"
+    - run: git config user.email "actions@github.com"
     - run: npm run deploy
