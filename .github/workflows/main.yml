@@ -12,8 +12,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '13.x'
-    - run: npm ci
-    - run: env
-    - run: git config user.name "Action ${{ github.workflow }}"
-    - run: git config user.email "${{ github.actor }}@users.noreply.github.com"
-    - run: npm run deploy -- --repo https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
+    - run: |
+        git config user.name "${{ github.actor }}"
+        git config user.email "${{ github.actor }}@users.noreply.github.com"
+        npm ci
+        npm run deploy -- --repo "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
