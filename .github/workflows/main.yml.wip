@@ -13,7 +13,7 @@ jobs:
       with:
         node-version: '13.x'
     - run: |
-        git config user.name "${{ github.actor }}"
-        git config user.email "${{ github.actor }}@users.noreply.github.com"
+        git config user.name "deek80"
+        git config user.email "37046246+deek80@users.noreply.github.com"
         npm ci
         npm run deploy -- --repo "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"

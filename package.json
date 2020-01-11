@@ -7,6 +7,7 @@
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.3.3",
+    "firebase": "^7.6.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -o don -d build",
     "lint": "eslint --fix --max-warnings 0 src",
     "predeploy": "react-scripts build",
     "start": "react-scripts start"
