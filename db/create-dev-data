@@ -1,0 +1,6 @@
+#!/bin/bash
+# Use these commands to create an empty postgres data directory with a given user/password:
+docker run --rm -v "$PWD/data:/var/lib/postgresql/data" -e POSTGRES_USER=dev -e POSTGRES_PASSWORD=dev postgres:12
+
+# Then Ctrl+C that and run:
+sudo chown -R $USER:$USER data

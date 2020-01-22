@@ -4,18 +4,17 @@ services:
   api:
     build:
       context: ./api
-    depends_on:
-      - db
     environment:
-      - FLASK_APP=recipes_api:app
+      - FLASK_APP=recipes_api:create_app
+      - FLASK_ENV=development
+      - SQLALCHEMY_DATABASE_URI=postgres://dev:dev@db/dev
     ports:
       - 5000:5000
+    volumes:
+      - ./api:/opt/api
   db:
     build:
       context: ./db
-    user: 1000:1000
     environment:
       POSTGRES_USER: dev
       POSTGRES_PASSWORD: dev
-    volumes:
-      - ./db/.dev-data:/var/lib/postgresql/data
