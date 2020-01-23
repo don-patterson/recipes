@@ -4,14 +4,15 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-ipython = "*"
 black = "==19.10b0"
+flask-shell-ipython = "*"
+ipython = "*"
 
 [packages]
-sqlalchemy = "*"
-psycopg2 = "*"
 flask = "*"
 flask-sqlalchemy = "*"
+psycopg2 = "*"
+sqlalchemy = "*"
 
 [requires]
 python_version = "3.8"
