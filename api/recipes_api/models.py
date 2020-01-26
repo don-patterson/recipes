@@ -4,47 +4,46 @@ from re import findall
 db = SQLAlchemy()
 
 
-class Ingredient(db.Model):
-    """
-    Storing things like:
-    - 2 cups potatoes, peeled and cubed
-    - 1 tsp salt
-    - 1 large onion, diced
-    - 3 carrots
-   """
-
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(255), nullable=False)
-    prep = db.Column(db.String(255), nullable=False)
-    quantity = db.Column(db.String(255), nullable=False)
-
-    def phrase(self):
-        """ This might be useless, but ah well """
-        if self.prep:
-            return f"{self.quantity} {self.name} ({self.prep})"
-        return f"{self.quantity} {self.name}"
-
-
 class Step(db.Model):
     """
-    A step in a recipe. Like: "Whisk 2 eggs and 1 clove of minced garlic in a large bowl"
-
-    I'm not quite sure how to do this. I don't think I can enforce my stupid
-    requirements with a database alone. I want like "Whisk {ingredient:123} and {ingredient:456} in a large bowl"
-    and that would reference the "2 eggs" and "1 clove of minced garlic" ingredients. So just for convenience I think
-    you'd need a join table for Steps <--> Ingredients so that you could fill in the step without doing 100 queries.
-
-    But at the same time, you wouldn't want the backend filling that in, necessarily.
-
-    Anyway, I think I'll give this a try, but there's got to be a better way.
-
+    A step in a recipe. Like: "Whisk 2 eggs and 1 clove garlic (minced) in a large bowl"
+    This would be stored like:
+      text = "Whisk {0} and {1} in a large bowl"
+      ingredients = [
+          {"name": "eggs", "quantity": "2"},
+          {"name": "garlic", "quantity": "1 clove", "prep": "minced"},
+      ]
     """
 
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.Text, nullable=False)
+    ingredients = db.Column(db.JSON, nullable=False, default=list)
 
-    def ingredient_ids():
-        return [
-            int(ingredient_id)
-            for ingredient_id in findall("{ingredient:(\d+)}", self.text)
-        ]
+    @staticmethod
+    def _format_ingredient(ingredient):
+        """
+        This is just for fun really. It takes something like:
+            {
+                "name": "garlic",
+                "quantity": "1 clove",
+                "prep": "minced"
+            }
+        and returns:
+            "1 clove garic (minced)"
+
+        Both `quantity` and `prep` are optional.
+        """
+
+        if quantity := ingredient.get("quantity"):
+            formatted = f"{quantity} {ingredient['name']}"
+        else:
+            formatted = f"{ingredient['name']}"
+
+        if prep := ingredient.get("prep"):
+            return f"{formatted} ({prep})"
+        return formatted
+
+    def sentence(self):
+        return self.text.format(
+            *(self._format_ingredient(ingredient) for ingredient in self.ingredients)
+        )

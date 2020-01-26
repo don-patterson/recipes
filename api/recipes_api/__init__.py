@@ -1,7 +1,7 @@
 from flask import Flask
 from os import environ
 
-from recipes_api.models import db, Ingredient
+from recipes_api.models import db, Step
 
 
 def create_app():
@@ -29,9 +29,22 @@ def register_cli(app):
     @app.cli.command("seed")
     def seed():
         """ Seed some data for testing """
-        db.session.add(Ingredient(name="carrots", quantity="3", prep="chopped"))
-        db.session.add(Ingredient(name="peas", quantity="2x375ml can", prep="drained"))
-        db.session.add(Ingredient(name="eggs", quantity="2", prep=""))
+        db.session.add(
+            Step(
+                text="Add {0} and {1} to a pot.",
+                ingredients=[
+                    {"name": "carrots", "quantity": "2 cups", "prep": "cubed ~2cm"},
+                    {"name": "potatoes", "quantity": "4 cups", "prep": "cubed ~2cm"},
+                ],
+            )
+        )
+        db.session.add(
+            Step(
+                text="Add {0} and bring to a boil",
+                ingredients=[{"name": "chicken broth", "quantity": "4 cups"}],
+            ),
+        )
+        db.session.add(Step(text="And some other stuff"))
         db.session.commit()
 
     app.cli.add_command(init)
@@ -39,9 +52,6 @@ def register_cli(app):
 
 
 def register_routes(app):
-    @app.route("/ingredients")
-    def test():
-        return {
-            ingredient.name: ingredient.phrase()
-            for ingredient in Ingredient.query.all()
-        }
+    @app.route("/steps")
+    def steps():
+        return {step.id: step.sentence() for step in Step.query.all()}
