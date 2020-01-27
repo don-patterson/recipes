@@ -19,18 +19,16 @@ class Step(db.Model):
     text = db.Column(db.Text, nullable=False)
     ingredients = db.Column(db.JSON, nullable=False, default=list)
 
+    required_by_id = db.Column(db.Integer, db.ForeignKey("step.id"), nullable=True)
+    required_by = db.relationship("Step", remote_side=id, backref="requirements")
+
     @staticmethod
     def _format_ingredient(ingredient):
         """
         This is just for fun really. It takes something like:
-            {
-                "name": "garlic",
-                "quantity": "1 clove",
-                "prep": "minced"
-            }
+            {"name": "garlic", "quantity": "1 clove", "prep": "minced"}
         and returns:
             "1 clove garic (minced)"
-
         Both `quantity` and `prep` are optional.
         """
 
