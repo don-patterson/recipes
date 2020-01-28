@@ -48,8 +48,9 @@ class Step(db.Model):
     text = db.Column(db.Text, nullable=False)
     ingredients = db.Column(Ingredient.JSON, nullable=False, default=list)
 
-    required_by_id = db.Column(db.Integer, db.ForeignKey("step.id"), nullable=True)
-    required_by = db.relationship("Step", remote_side=id, backref="requirements")
+    # This is only half baked right now. I'll add it to the TODO list:
+    # required_by_id = db.Column(db.Integer, db.ForeignKey("step.id"), nullable=True)
+    # required_by = db.relationship("Step", remote_side=id, backref="requirements")
 
     def __str__(self):
         return self.text.format(*self.ingredients)
