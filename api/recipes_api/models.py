@@ -4,6 +4,35 @@ from re import findall
 db = SQLAlchemy()
 
 
+class Ingredient:
+    def __init__(self, name, quantity=None, prep=None):
+        self.name = name
+        self.quantity = quantity
+        self.prep = prep
+
+    def as_dict(self):
+        return {"name": self.name, "quantity": self.quantity, "prep": self.prep}
+
+    def __str__(self):
+        text = self.name
+        if self.quantity:
+            text = f"{self.quantity} {text}"
+        if self.prep:
+            text = f"{text} ({self.prep})"
+        return text
+
+    class JSON(db.TypeDecorator):
+        impl = db.JSON
+        python_type = list
+
+        def process_bind_param(self, value, dialect):
+            """ The JSON value to store in the db """
+            return [ingredient.as_dict() for ingredient in value]
+
+        def process_result_value(self, value, dialect):
+            return [Ingredient(**ingredient_dict) for ingredient_dict in value]
+
+
 class Step(db.Model):
     """
     A step in a recipe. Like: "Whisk 2 eggs and 1 clove garlic (minced) in a large bowl"
@@ -17,31 +46,10 @@ class Step(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.Text, nullable=False)
-    ingredients = db.Column(db.JSON, nullable=False, default=list)
+    ingredients = db.Column(Ingredient.JSON, nullable=False, default=list)
 
     required_by_id = db.Column(db.Integer, db.ForeignKey("step.id"), nullable=True)
     required_by = db.relationship("Step", remote_side=id, backref="requirements")
 
-    @staticmethod
-    def _format_ingredient(ingredient):
-        """
-        This is just for fun really. It takes something like:
-            {"name": "garlic", "quantity": "1 clove", "prep": "minced"}
-        and returns:
-            "1 clove garic (minced)"
-        Both `quantity` and `prep` are optional.
-        """
-
-        if quantity := ingredient.get("quantity"):
-            formatted = f"{quantity} {ingredient['name']}"
-        else:
-            formatted = f"{ingredient['name']}"
-
-        if prep := ingredient.get("prep"):
-            return f"{formatted} ({prep})"
-        return formatted
-
-    def sentence(self):
-        return self.text.format(
-            *(self._format_ingredient(ingredient) for ingredient in self.ingredients)
-        )
+    def __str__(self):
+        return self.text.format(*self.ingredients)
