@@ -8,6 +8,7 @@ services:
       - FLASK_APP=recipes_api:create_app
       - FLASK_ENV=development
       - SQLALCHEMY_DATABASE_URI=postgres://dev:dev@db/dev
+      - SQLALCHEMY_ECHO=True
     ports:
       - 5000:5000
     volumes:
