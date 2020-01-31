@@ -9,11 +9,6 @@ class Recipes(MethodView):
         return {"results": Recipe.query.all()}
 
 
-class Steps(MethodView):
-    def get(self):
-        return {"results": Step.query.all()}
-
-
 class JSONDictEncoder(JSONEncoder):
     def default(self, o):
         if hasattr(o, "as_dict"):
@@ -23,5 +18,4 @@ class JSONDictEncoder(JSONEncoder):
 
 def register_views(app):
     app.json_encoder = JSONDictEncoder
-    app.add_url_rule("/steps", view_func=Steps.as_view("steps"))
     app.add_url_rule("/recipes", view_func=Recipes.as_view("recipes"))
