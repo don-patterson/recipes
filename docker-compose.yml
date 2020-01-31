@@ -4,6 +4,8 @@ services:
   api:
     build:
       context: ./api
+    depends_on:
+      - db
     environment:
       - FLASK_APP=recipes_api:create_app
       - FLASK_ENV=development
@@ -12,10 +14,18 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - ./api:/opt/api
+      - ./api/recipes_api:/opt/api/recipes_api
   db:
     build:
       context: ./db
     environment:
       POSTGRES_USER: dev
       POSTGRES_PASSWORD: dev
+  web:
+    build:
+      context: ./web
+    ports:
+      - 3000:3000
+    volumes:
+      - ./web/public:/opt/web/public
+      - ./web/src:/opt/web/src
