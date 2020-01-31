@@ -13,14 +13,6 @@ class Ingredient:
     def as_dict(self):
         return {"name": self.name, "quantity": self.quantity, "prep": self.prep}
 
-    def __str__(self):
-        text = self.name
-        if self.quantity:
-            text = f"{self.quantity} {text}"
-        if self.prep:
-            text = f"{text} ({self.prep})"
-        return text
-
     class JSON(db.TypeDecorator):
         impl = db.JSON
         python_type = list
@@ -33,24 +25,30 @@ class Ingredient:
             return [Ingredient(**ingredient_dict) for ingredient_dict in value]
 
 
-class Step(db.Model):
-    """
-    A step in a recipe. Like: "Whisk 2 eggs and 1 clove garlic (minced) in a large bowl"
-    This would be stored like:
-      text = "Whisk {0} and {1} in a large bowl"
-      ingredients = [
-          {"name": "eggs", "quantity": "2"},
-          {"name": "garlic", "quantity": "1 clove", "prep": "minced"},
-      ]
-    """
+class Recipe(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(255), nullable=False)
+    steps = db.relationship("Step", back_populates="recipe")
 
+    def as_dict(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "steps": [s.as_dict() for s in self.steps],  # n queries!
+        }
+
+
+class Step(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     text = db.Column(db.Text, nullable=False)
     ingredients = db.Column(Ingredient.JSON, nullable=False, default=list)
+    recipe_id = db.Column(db.Integer, db.ForeignKey("recipe.id"), nullable=True)
+    recipe = db.relationship("Recipe", back_populates="steps")
 
-    # This is only half baked right now. I'll add it to the TODO list:
-    # required_by_id = db.Column(db.Integer, db.ForeignKey("step.id"), nullable=True)
-    # required_by = db.relationship("Step", remote_side=id, backref="requirements")
-
-    def __str__(self):
-        return self.text.format(*self.ingredients)
+    def as_dict(self):
+        return {
+            "id": self.id,
+            "text": self.text,
+            "recipe_id": self.recipe_id,
+            "ingredients": [i.as_dict() for i in self.ingredients],
+        }
