@@ -4,6 +4,30 @@ from re import findall
 db = SQLAlchemy()
 
 
+class Model(db.Model):
+    __abstract__ = True
+
+    PAGE_SIZE = 3
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    @classmethod
+    def next_page(cls, after=None):
+        query = cls.query
+        if after is not None:
+            query = query.filter(cls.id > after)
+        return query.order_by(cls.id).limit(cls.PAGE_SIZE).all()
+
+    @classmethod
+    def last_page(cls, before=None):
+        query = cls.query
+        if before is not None:
+            query = query.filter(cls.id < before)
+        page = query.order_by(cls.id.desc()).limit(cls.PAGE_SIZE).all()
+        page.reverse()
+        return page
+
+
 class Ingredient:
     def __init__(self, name, quantity=None, prep=None):
         self.name = name
@@ -25,21 +49,15 @@ class Ingredient:
             return [Ingredient(**ingredient_dict) for ingredient_dict in value]
 
 
-class Recipe(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+class Recipe(Model):
     name = db.Column(db.String(255), nullable=False)
     steps = db.relationship("Step", back_populates="recipe")
 
     def as_dict(self):
-        return {
-            "id": self.id,
-            "name": self.name,
-            "steps": [s.as_dict() for s in self.steps],  # n queries!
-        }
+        return {"id": self.id, "name": self.name}
 
 
-class Step(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+class Step(Model):
     text = db.Column(db.Text, nullable=False)
     ingredients = db.Column(Ingredient.JSON, nullable=False, default=list)
     recipe_id = db.Column(db.Integer, db.ForeignKey("recipe.id"), nullable=True)
