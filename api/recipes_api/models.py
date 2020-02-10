@@ -67,6 +67,5 @@ class Step(Model):
         return {
             "id": self.id,
             "text": self.text,
-            "recipe_id": self.recipe_id,
             "ingredients": [i.as_dict() for i in self.ingredients],
         }

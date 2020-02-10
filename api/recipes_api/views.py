@@ -52,6 +52,30 @@ class StepView(ApiView):
         return {"results": Step.query.filter_by(**params("recipe_id")).all()}
 
 
+class CrawlView(ApiView):
+    """ Dump the important database contents in a giant JSON file
+        so I can keep the react site static!
+
+        Endpoint data is dumped in {url: contents} pairs.
+    """
+
+    url = "/crawl"
+
+    def get(self):
+        endpoint_data = {"/recipes": Recipe.next_page()}
+
+        for recipe in Recipe.query.all():
+            endpoint_data.update(
+                {
+                    f"/recipes?after={recipe.id}": Recipe.next_page(after=recipe.id),
+                    f"/recipes?before={recipe.id}": Recipe.last_page(before=recipe.id),
+                    f"/steps?recipe_id={recipe.id}": recipe.steps,
+                }
+            )
+
+        return endpoint_data
+
+
 class JSONDictEncoder(JSONEncoder):
     def default(self, o):
         if hasattr(o, "as_dict"):
@@ -63,3 +87,4 @@ def register_views(app):
     app.json_encoder = JSONDictEncoder
     RecipeView.add_url_rules(app)
     StepView.add_url_rules(app)
+    # CrawlView.add_url_rules(app)
