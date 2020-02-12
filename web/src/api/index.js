@@ -1,19 +1,10 @@
 import data from "./data.json";
-
-const _encodeEntry = kv => kv.map(encodeURIComponent).join("=");
-
-const encodeQueryParams = params => {
-  const entries = Object.entries(params);
-  if (entries.length === 0) {
-    return "";
-  }
-
-  return "?" + entries.map(_encodeEntry).join("&");
-};
+import {encodeQueryParams, sleep} from "../util";
 
 class FakeApi {
-  static get(collection, params = {}) {
+  static async get(collection, params = {}) {
     const url = "/" + collection + encodeQueryParams(params);
+    await sleep(2000);
     return data[url];
   }
 }

@@ -1,13 +1,8 @@
 import React from "react";
-import {
-  Drawer as MuiDrawer,
-  List,
-  ListItem,
-  ListItemText,
-} from "@material-ui/core";
+import {Drawer as MuiDrawer} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
 
-import {recipes} from "../recipes";
+import RecipeList from "./RecipeList";
 
 const useStyles = makeStyles(theme => ({
   list: {
@@ -29,18 +24,7 @@ const Drawer = props => {
         onClick={closeDrawer}
         onKeyDown={closeDrawer}
       >
-        <List className={classes.list}>
-          {recipes.map(recipe => (
-            <ListItem
-              key={recipe.key}
-              button
-              component="a"
-              href={`#${recipe.key}`}
-            >
-              <ListItemText primary={recipe.name} />
-            </ListItem>
-          ))}
-        </List>
+        <RecipeList className={classes.list} />
       </div>
     </MuiDrawer>
   );
