@@ -4,7 +4,7 @@ import {encodeQueryParams, sleep} from "../util";
 class FakeApi {
   static async get(collection, params = {}) {
     const url = "/" + collection + encodeQueryParams(params);
-    await sleep(2000);
+    await sleep(1000);
     return data[url];
   }
 }

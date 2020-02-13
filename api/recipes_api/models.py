@@ -7,7 +7,7 @@ db = SQLAlchemy()
 class Model(db.Model):
     __abstract__ = True
 
-    PAGE_SIZE = 3
+    PAGE_SIZE = 50
 
     id = db.Column(db.Integer, primary_key=True)
 

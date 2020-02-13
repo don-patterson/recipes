@@ -12,7 +12,7 @@ def register_cli(app):
     @app.cli.command("seed")
     def seed():
         """ Seed some data for testing """
-        for _ in range(10):
+        for _ in range(300):
             db.session.add(recipe())
         db.session.commit()
 

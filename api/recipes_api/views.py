@@ -87,4 +87,4 @@ def register_views(app):
     app.json_encoder = JSONDictEncoder
     RecipeView.add_url_rules(app)
     StepView.add_url_rules(app)
-    # CrawlView.add_url_rules(app)
+    CrawlView.add_url_rules(app)

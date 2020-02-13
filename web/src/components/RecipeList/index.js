@@ -1,46 +1,45 @@
 import React, {PureComponent} from "react";
-import ExampleWrapper from "./exampleWrapper";
+import InfiniteLoader from "./InfiniteLoader";
+import {last, noop} from "../../util";
+import {FakeApi} from "../../api";
 
-class App extends PureComponent {
+class RecipeList extends PureComponent {
   state = {
-    hasNextPage: true,
-    isNextPageLoading: false,
-    items: [],
+    recipes: [],
+    loadMore: noop,
   };
 
-  _loadNextPage = (...args) => {
-    console.log("loadNextPage", ...args, this.state);
-    this.setState({isNextPageLoading: true}, () => {
-      setTimeout(() => {
-        this.setState(state => {
-          const moreItems = [
-            ...state.items,
-            {name: `Test ${state.items.length}`},
-            {name: `Test ${state.items.length + 1}`},
-            {name: `Test ${state.items.length + 2}`},
-          ];
-          return {
-            hasNextPage: moreItems.length < 25,
-            isNextPageLoading: false,
-            items: moreItems,
-          };
+  loadRecipes = () => {
+    this.setState({loadMore: noop}, () => {
+      const page = {};
+      const lastRecipe = last(this.state.recipes);
+      if (lastRecipe !== undefined) {
+        page.after = lastRecipe.id;
+      }
+      FakeApi.get("recipes", page).then(nextPage => {
+        if (nextPage.length === 0) {
+          return;
+        }
+        this.setState({
+          recipes: [...this.state.recipes, ...nextPage],
+          loadMore: this.loadRecipes,
         });
-      }, 2500);
+      });
     });
   };
 
-  render() {
-    const {hasNextPage, isNextPageLoading, items} = this.state;
+  componentDidMount() {
+    this.loadRecipes();
+  }
 
+  render() {
     return (
-      <ExampleWrapper
-        hasMore={hasNextPage}
-        isLoading={isNextPageLoading}
-        items={items}
-        loadMore={this._loadNextPage}
+      <InfiniteLoader
+        items={this.state.recipes}
+        loadMore={this.state.loadMore}
       />
     );
   }
 }
 
-export default App;
+export default RecipeList;
