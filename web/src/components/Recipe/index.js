@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, {useEffect, useState} from "react";
 import {Typography} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
+import {useParams} from "react-router-dom";
 
-import Section from "./Section";
+import {FakeApi} from "../../api";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -11,21 +11,24 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Recipe = ({name, sections}) => {
+const Recipe = () => {
   const classes = useStyles();
+  const {id} = useParams();
+
+  const [steps, setSteps] = useState([]);
+
+  useEffect(() => {
+    FakeApi.get("steps", {recipe_id: id}).then(setSteps);
+  }, [id]);
+
   return (
     <div className={classes.root}>
-      <Typography variant="h5">{name}</Typography>
-      {sections.map((section, index) => (
-        <Section key={index} {...section} />
+      <Typography variant="h5">{`Recipe ${id}!`}</Typography>
+      {steps.map(step => (
+        <Typography key={step.id}>{step.text}</Typography>
       ))}
     </div>
   );
-};
-
-Recipe.propTypes = {
-  name: PropTypes.string.isRequired,
-  sections: PropTypes.arrayOf(Section).isRequired,
 };
 
 export default Recipe;
