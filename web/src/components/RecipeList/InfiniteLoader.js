@@ -2,34 +2,35 @@ import React from "react";
 import {FixedSizeList} from "react-window";
 import ReactWindowInfiniteLoader from "react-window-infinite-loader";
 import {ListItem, ListItemText} from "@material-ui/core";
-import {noop, useWindowDimensions} from "../../util";
+import {noop} from "../../util";
 
-const InfiniteLoader = ({items, loadMore}) => {
-  // Load a page at a time, and append it to the list. The last item in the list
-  // will trigger `loadMore` when you scroll near it unless `loadMore === noop`.
-  // Set it this way to prevent multiple concurrent calls to `loadMore`, of if the end of
-  // your list has been reached.
-  const {height} = useWindowDimensions();
-
-  const isFinishedLoading =
-    loadMore === noop ? () => true : index => index !== items.length - 1;
+const InfiniteLoader = ({
+  items,
+  isLoading,
+  hasMore,
+  loadMore,
+  height,
+  width,
+}) => {
+  // every item is "loaded" except the last one
+  const isItemLoaded = index => !hasMore || index !== items.length - 1;
+  const loadMoreItems = isLoading ? noop : loadMore;
 
   const renderItem = ({index, style}) => {
-    const recipe = items[index];
+    const item = items[index];
     return (
-      <ListItem style={style} button component="a" href={`#${recipe.id}`}>
-        <ListItemText primary={recipe.name} />
+      <ListItem style={style} button component="a" href={`#${item.id}`}>
+        <ListItemText primary={item.name} />
       </ListItem>
     );
   };
 
   const renderList = props => (
     <FixedSizeList
-      className="List"
-      height={height}
       itemCount={items.length}
       itemSize={48}
-      width={240}
+      height={height}
+      width={width}
       {...props}
     >
       {renderItem}
@@ -38,9 +39,9 @@ const InfiniteLoader = ({items, loadMore}) => {
 
   return (
     <ReactWindowInfiniteLoader
-      isItemLoaded={isFinishedLoading}
+      isItemLoaded={isItemLoaded}
       itemCount={items.length}
-      loadMoreItems={loadMore}
+      loadMoreItems={loadMoreItems}
     >
       {renderList}
     </ReactWindowInfiniteLoader>
