@@ -19,6 +19,7 @@ const Recipe = () => {
 
   useEffect(() => {
     FakeApi.get("steps", {recipe_id: id}).then(setSteps);
+    return () => setSteps([]);
   }, [id]);
 
   return (

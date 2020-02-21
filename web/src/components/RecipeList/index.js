@@ -12,6 +12,10 @@ const RecipeList = () => {
   const {height} = useWindowDimensions();
 
   const loadMore = async () => {
+    // TODO: figure out if it would be better to have the request in state, and
+    // trigger an effect when the request was updated. For now this seems to
+    // work ok, but I htink you can still get it into a bad state with crazy
+    // clicking and scrolling.
     setLoading(true);
     const nextPage = await FakeApi.get("recipes", {after: last(recipes).id});
     setRecipes([...recipes, ...nextPage]);
