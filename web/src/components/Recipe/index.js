@@ -14,7 +14,6 @@ const useStyles = makeStyles(theme => ({
 const Recipe = () => {
   const classes = useStyles();
   const {id} = useParams();
-
   const [steps, setSteps] = useState([]);
 
   useEffect(() => {

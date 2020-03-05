@@ -1,5 +1,4 @@
 from flask_sqlalchemy import SQLAlchemy
-from re import findall
 
 db = SQLAlchemy()
 
