@@ -6,13 +6,8 @@ services:
       context: ./api
     depends_on:
       - db
-    environment:
-      - FLASK_APP=recipes_api:create_app
-      - FLASK_ENV=development
-      - SQLALCHEMY_DATABASE_URI=postgres://dev:dev@db/dev
-      - SQLALCHEMY_ECHO=True
     ports:
-      - 5000:5000
+      - 8000:8000
     volumes:
       - ./api/recipes_api:/opt/api/recipes_api
   db:

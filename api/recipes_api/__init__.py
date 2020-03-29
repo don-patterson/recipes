@@ -1,21 +1,37 @@
-from flask import Flask
-from os import environ
+from fastapi import Depends, FastAPI
+from sqlalchemy.orm import Session
+from typing import List
 
-from recipes_api.cli import register_cli
-from recipes_api.models import db
-from recipes_api.views import register_views
+from .database import BaseModel, SessionLocal
+from . import models, schemas
+
+# This is a little extreme, but just for testing:
+BaseModel.metadata.drop_all()
+BaseModel.metadata.create_all()
+
+app = FastAPI()
+
+# Dependency
+def get_db():
+    try:
+        db = SessionLocal()
+        yield db
+    finally:
+        db.close()
 
 
-def create_app():
-    app = Flask(__name__)
-    app.config.update(
-        SQLALCHEMY_DATABASE_URI=environ["SQLALCHEMY_DATABASE_URI"],
-        SQLALCHEMY_ECHO=environ.get("SQLALCHEMY_ECHO") == "True",
-        SQLALCHEMY_TRACK_MODIFICATIONS=False,
-    )
-    db.init_app(app)
+@app.get("/")
+def root():
+    return {"message": "Hello, World!"}
 
-    register_cli(app)
-    register_views(app)
 
-    return app
+@app.get("/reset")
+def reset():
+    BaseModel.metadata.drop_all()
+    BaseModel.metadata.create_all()
+    return {"message": "boom!"}
+
+
+@app.get("/read", response_model=List[schemas.Step])
+def read(db: Session = Depends(get_db)):
+    return db.query(models.Step).all()

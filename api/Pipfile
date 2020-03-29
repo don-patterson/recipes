@@ -5,14 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 black = "==19.10b0"
-flask-shell-ipython = "*"
 ipython = "*"
 
 [packages]
-flask = "*"
-flask-sqlalchemy = "*"
 psycopg2 = "*"
 sqlalchemy = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [requires]
 python_version = "3.8"
