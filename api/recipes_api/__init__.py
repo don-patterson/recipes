@@ -11,7 +11,7 @@ BaseModel.metadata.create_all()
 
 app = FastAPI()
 
-# Dependency
+
 def get_db():
     try:
         db = SessionLocal()
@@ -23,13 +23,6 @@ def get_db():
 @app.get("/")
 def root():
     return {"message": "Hello, World!"}
-
-
-@app.get("/reset")
-def reset():
-    BaseModel.metadata.drop_all()
-    BaseModel.metadata.create_all()
-    return {"message": "boom!"}
 
 
 @app.get("/read", response_model=List[schemas.Step])
