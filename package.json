@@ -4,14 +4,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.4.0",
-    "@material-ui/icons": "^4.2.1",
-    "@material-ui/styles": "^4.3.3",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.10.0",
+    "marked": "^1.1.1",
     "prop-types": "^15.7.2",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.1.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3"
   },
   "scripts": {
     "build": "react-scripts build",
@@ -21,12 +22,13 @@
     "start": "react-scripts start"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "gh-pages": "^2.1.1",
-    "prettier": "^1.18.2"
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "gh-pages": "^3.1.0",
+    "prettier": "^2.1.2"
   },
   "prettier": {
+    "arrowParens": "avoid",
     "bracketSpacing": false,
     "trailingComma": "es5"
   },
