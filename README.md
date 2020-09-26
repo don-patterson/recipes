@@ -16,6 +16,7 @@ sure I could just bundle all of the recipes in the JS and require a rebuild ever
 there's an update to the recipes...
 
 Ok, I think it wouldn't be that hard to `fetch` the pages and just display your rate limit for now. Don't go crazy or else you'll just have to navigate the git repo yourself.
+
 > The returned HTTP headers of any API request show your current rate limit status:
 > ```
 > curl -i https://api.github.com/users/octocat
