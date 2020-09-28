@@ -7,9 +7,9 @@ export default () => {
   const [items, setItems] = useState([]);
   const [markdown, setMarkdown] = useState("");
 
-  const {remaining, resetOn} = limits.useState(s => ({
+  const {remaining, minutesUntilReset} = limits.useState(s => ({
     remaining: s.remaining,
-    resetOn: s.resetOn,
+    minutesUntilReset: s.minutesUntilReset,
   }));
 
   const doFetch = async () => {
@@ -18,15 +18,17 @@ export default () => {
 
   const dumpContent = async url => {
     const response = await fetch(url);
-    const raw = await response.text();
-    console.log("dumpContent:", raw);
-    setMarkdown(raw);
+    if (!response.ok) {
+      console.error("Failed to fetch url:", url);
+      setMarkdown("Failed to fetch url");
+    }
+    setMarkdown(await response.text());
   };
 
   return (
     <>
       <div>
-        Api limits: remaining:{remaining} resetOn:{resetOn}
+        Api limits: remaining:{remaining} minutesUntilReset:{minutesUntilReset}
       </div>
       <Button onClick={doFetch} variant="contained">
         Do Fetch
