@@ -27,3 +27,11 @@ Ok, I think it wouldn't be that hard to `fetch` the pages and just display your 
 >  X-RateLimit-Remaining: 56
 >  X-RateLimit-Reset: 1372700873
 >  ```
+
+
+## Test test 1 2
+- [ ] what does this look like for users without write access
+- [ ] I hope it's a normal checklist
+- [x] with checkd off entries too
+- [x] such as this
+- [ ] and one left to do
