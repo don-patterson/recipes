@@ -1,16 +1,10 @@
 import React, {useState} from "react";
 import {Button} from "@material-ui/core";
 import marked from "marked";
-import {ls, limits} from "./lib/githubApi";
 
 export default () => {
   const [items, setItems] = useState([]);
   const [markdown, setMarkdown] = useState("");
-
-  const {remaining, minutesUntilReset} = limits.useState(s => ({
-    remaining: s.remaining,
-    minutesUntilReset: s.minutesUntilReset,
-  }));
 
   const doFetch = async () => {
     setItems(await ls("deek80", "recipes", "/public/list"));

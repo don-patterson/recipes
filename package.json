@@ -8,8 +8,6 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "marked": "^2.0.0",
-    "prop-types": "^15.7.2",
-    "pullstate": "^1.16.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
@@ -18,13 +16,11 @@
   "scripts": {
     "build": "react-scripts build",
     "deploy": "gh-pages -o don -d build",
-    "lint": "eslint --fix --max-warnings 0 src",
+    "format": "prettier --write src",
     "predeploy": "react-scripts build",
     "start": "react-scripts start"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-prettier": "^3.1.4",
     "gh-pages": "^3.1.0",
     "prettier": "^2.1.2"
   },
@@ -32,13 +28,6 @@
     "arrowParens": "avoid",
     "bracketSpacing": false,
     "trailingComma": "es5"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "prettier/react",
-      "plugin:prettier/recommended"
-    ]
   },
   "browserslist": [
     ">0.2%",
