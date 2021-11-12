@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import {Button} from "@material-ui/core";
-import marked from "marked";
 import {Repo} from "@deek80/gh-reader";
+import Markdown from "./components/Markdown";
+import Picker from "./components/Picker";
 
 const repo = new Repo("deek80/recipes");
 
@@ -17,17 +17,14 @@ export default () => {
     return httpResponse.text();
   };
 
-  const loadRecipePoc = async () => {
-    const files = await repo.ls("public/list");
-    console.log("got files:", files);
-    const firstRecipe = await download(files[0]);
-    setMarkdown(firstRecipe);
+  const handleSelected = async recipe => {
+    setMarkdown(await download(recipe));
   };
 
   return (
     <>
-      <Button onClick={loadRecipePoc}>Load recipe</Button>
-      <div dangerouslySetInnerHTML={{__html: marked(markdown)}}></div>
+      <Picker repo={repo} onSelected={handleSelected} />
+      <Markdown raw={markdown} />
     </>
   );
 };
