@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import {Autocomplete, TextField} from "@mui/material";
 
 export default ({repo, onSelected}) => {
+  const [isLoading, setLoading] = useState(true);
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
@@ -9,14 +10,36 @@ export default ({repo, onSelected}) => {
       setRecipes(await repo.ls("public/list"));
     };
     fetchRecipes();
+    setLoading(false);
   }, [repo]);
 
   return (
     <Autocomplete
       autoHighlight
-      getOptionLabel={option => option.name}
+      autoSelect
+      fullWidth
+      getOptionLabel={option => option.name.replace(/\.md$/, "")}
       options={recipes}
-      renderInput={params => <TextField {...params} label="Recipe" />}
+      renderInput={params => (
+        <TextField
+          {...params}
+          placeholder={isLoading ? "Loading..." : "Select a Recipe"}
+          sx={{
+            "&.MuiOutlinedInput-root": {
+              color: "primary.contrastText",
+              "& fieldset": {
+                borderColor: "primary.contrastText",
+              },
+              "&:hover fieldset": {
+                borderColor: "primary.contrastText",
+              },
+              "&.Mui-focused fieldset": {
+                borderColor: "primary.contrastText",
+              },
+            },
+          }}
+        />
+      )}
       onChange={(_event, value) => onSelected(value)}
     />
   );
