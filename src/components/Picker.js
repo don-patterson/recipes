@@ -17,7 +17,10 @@ export default ({repo, onSelected}) => {
     <Autocomplete
       autoHighlight
       autoSelect
+      blurOnSelect
+      clearOnBlur
       fullWidth
+      openOnFocus
       getOptionLabel={option => option.name.replace(/\.md$/, "")}
       options={recipes}
       renderInput={params => (
@@ -41,6 +44,7 @@ export default ({repo, onSelected}) => {
         />
       )}
       onChange={(_event, value) => onSelected(value)}
+      ListboxProps={{sx: {maxHeight: "75vh"}}}
     />
   );
 };
