@@ -1,23 +1,31 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
+import {AppBar, Box, Toolbar} from "@mui/material";
+import RestaurantIcon from "@mui/icons-material/Restaurant";
 import {Repo} from "@deek80/gh-reader";
 import Markdown from "./components/Markdown";
 import Picker from "./components/Picker";
-import {AppBar, Box, Toolbar} from "@mui/material";
-import RestaurantIcon from "@mui/icons-material/Restaurant";
 
 const repo = new Repo("deek80/recipes");
 
+const download = async recipe => {
+  const httpResponse = await fetch(recipe.download_url);
+  if (!httpResponse.ok) {
+    console.error("Failed to fetch:", recipe.download_url);
+    return null;
+  }
+  return httpResponse.text();
+};
+
 export default () => {
+  const [recipes, setRecipes] = useState([]);
   const [markdown, setMarkdown] = useState("No recipe selected");
 
-  const download = async file => {
-    const httpResponse = await fetch(file.download_url);
-    if (!httpResponse.ok) {
-      console.error("Failed to fetch:", file.download_url);
-      return null;
-    }
-    return httpResponse.text();
-  };
+  useEffect(() => {
+    const fetchRecipes = async () => {
+      setRecipes(await repo.ls("public/list"));
+    };
+    fetchRecipes();
+  }, [repo]);
 
   const handleSelected = async recipe => {
     if (recipe === null) {
@@ -39,7 +47,12 @@ export default () => {
       <AppBar position="sticky">
         <Toolbar>
           <RestaurantIcon sx={{mr: 2}} />
-          <Picker repo={repo} onSelected={handleSelected} />
+          <Picker
+            options={recipes}
+            getLabel={recipe => recipe.name.replace(/\.md$/, "")}
+            onSelected={handleSelected}
+            placeholder="Select a Recipe"
+          />
         </Toolbar>
       </AppBar>
       <Box sx={{m: 4}}>
