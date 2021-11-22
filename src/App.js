@@ -7,15 +7,6 @@ import Picker from "./components/Picker";
 
 const repo = new Repo("deek80/recipes");
 
-const download = async recipe => {
-  const httpResponse = await fetch(recipe.download_url);
-  if (!httpResponse.ok) {
-    console.error("Failed to fetch:", recipe.download_url);
-    return null;
-  }
-  return httpResponse.text();
-};
-
 export default () => {
   const [recipes, setRecipes] = useState([]);
   const [markdown, setMarkdown] = useState("No recipe selected");
@@ -33,7 +24,7 @@ export default () => {
       return;
     }
 
-    const text = await download(recipe);
+    const text = await recipe.download();
     if (text === null) {
       setMarkdown("Error: failed to download recipe");
       return;

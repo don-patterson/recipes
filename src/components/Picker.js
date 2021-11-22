@@ -31,7 +31,7 @@ export default ({options, getLabel, placeholder, onSelected}) => (
         }}
       />
     )}
-    onChange={(_event, value) => onSelected(value)}
+    onChange={(_, value, reason) => reason === "blur" && onSelected(value)}
     ListboxProps={{sx: {maxHeight: "75vh"}}}
   />
 );
