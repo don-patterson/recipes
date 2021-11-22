@@ -55,7 +55,7 @@ export default () => {
             color="inherit"
             disabled={!editUrl}
             onClick={handleEdit}
-            sx={{ml: 2}}
+            sx={{ml: 2, p: 0}}
           >
             <EditIcon />
           </IconButton>
