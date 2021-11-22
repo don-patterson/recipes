@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from "react";
-import {AppBar, Box, Toolbar} from "@mui/material";
+import {AppBar, Box, IconButton, Toolbar} from "@mui/material";
+import EditIcon from "@mui/icons-material/Edit";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import {Repo} from "@deek80/gh-reader";
-import Markdown from "./components/Markdown";
-import Picker from "./components/Picker";
+import {Markdown, Picker} from "./components";
 
 const repo = new Repo("deek80/recipes");
 
 export default () => {
   const [recipes, setRecipes] = useState([]);
+  const [editUrl, setEditUrl] = useState(null);
   const [markdown, setMarkdown] = useState("No recipe selected");
 
   useEffect(() => {
@@ -20,10 +21,12 @@ export default () => {
 
   const handleSelected = async recipe => {
     if (recipe === null) {
+      setEditUrl(null);
       setMarkdown("No recipe selected");
       return;
     }
 
+    setEditUrl(recipe.edit_url);
     const text = await recipe.download();
     if (text === null) {
       setMarkdown("Error: failed to download recipe");
@@ -31,6 +34,10 @@ export default () => {
     }
 
     setMarkdown(text);
+  };
+
+  const handleEdit = () => {
+    window.open(editUrl);
   };
 
   return (
@@ -44,6 +51,14 @@ export default () => {
             onSelected={handleSelected}
             placeholder="Select a Recipe"
           />
+          <IconButton
+            color="inherit"
+            disabled={!editUrl}
+            onClick={handleEdit}
+            sx={{ml: 2}}
+          >
+            <EditIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
       <Box sx={{m: 4}}>
