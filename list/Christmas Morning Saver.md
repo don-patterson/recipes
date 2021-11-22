@@ -14,7 +14,7 @@
 - 1/2 cup butter
 - Special K or similar dry cereal
 
-## Directions
+## Directions (Day before)
 1. Butter a 9"x13" glass baking dish, and cover with a layer of bread slices.
 1. Cover the bread layer with slices of ham.
 1. Cover the ham layer with slices of cheese.
@@ -24,9 +24,8 @@
 1. Pour the egg mixture over the sandwiches.
 1. Cover and refrigerate overnight.
 
-## Directions
+## Directions (Morning of)
 1. Melt 1/2 cup of butter, and pour over egg sandwiches.
 1. Cover with Special K.
 1. Bake for 45 minutes, at 325F.
 1. Let stand for 10 minutes before serving.
-
