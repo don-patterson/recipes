@@ -9,3 +9,7 @@
 ## Directions
 - Mix up the ingredients and form 4 patties by hand
 - fry in a generously oiled pan until golden brown (just a couple minutes on each side)
+
+### Comments
+- We added fresh dill once, when we had it on hand. It was quite nice.
+- Using the bbq mats, you can grill them for about 4 minutes per side and they come out awesome.
