@@ -25,6 +25,6 @@ From [Hello Fresh](https://www.hellofresh.ca/recipes/bacon-corn-chowder-6135b231
 1. cover and simmer for 14 minutes (longer if you want it to thicken up)
 1. while that's happening:
    1. melt the butter and stir it with the remaining garlic puree
-   1. half the bread, spread the garlic butter, and broil for about 4 minutes
+   1. halve the bread, spread the garlic butter, and broil for about 4 minutes
 1. add cream and cook/stir for another 2 minutes
 1. serve, and sprinkle the remaining paprika over top
