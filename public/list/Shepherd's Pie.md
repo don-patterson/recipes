@@ -22,7 +22,7 @@ and some experimentation. Yields a 9x13 (or larger..tbd) pie!
 - pepper
 
 ## Directions
-- Boil and mash the potatoes with butter and milk
+- Boil and mash the potatoes with butter and milk and set aside. Meanwhile:
 - Small dice the onion, celery, and garlic
 - Fry the onion and celery until tender (~6 minutes)
 - add the garlic and cook for another minute
