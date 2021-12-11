@@ -1,3 +1,5 @@
+From [Simply Delicious](https://www.justapinch.com/recipes/dessert/cookies/simply-delicious-minty-cookies.html), yields ~3 dozen
+
 ## Ingredients
 - 1 cup butter flavored Crisco
 - 1 package (8 oz) cream cheese, softened
