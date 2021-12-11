@@ -24,7 +24,7 @@ and some experimentation. Yields a 9x13 (or larger..tbd) pie!
 ## Directions
 - Boil and mash the potatoes with butter and milk and set aside. Meanwhile:
 - Small dice the onion, celery, and garlic
-- Fry the onion and celery until tender (~6 minutes)
+- Fry the onion and celery until tender
 - add the garlic and cook for another minute
 - add the wine and bring to a boil, then simmer and stir until reduced to about half the volume
 - stir in the flour, tomato paste, and worchestershire
