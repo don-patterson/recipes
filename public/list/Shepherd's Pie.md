@@ -14,7 +14,10 @@ and some experimentation. Fills an 11x13 baking dish.
 - ~1/2 cup beef broth
 - 2 bay leaves
 - 1 tbsp thyme
-- other seasonings? maybe Italian, or just rosemary
+- other seasonings to try:
+  - parsley
+  - rosemary
+  - or just Italian seasoning
 - 2.5 lb potatoes (or sweet potatoes)
 - ~1/3 cup milk
 - butter
