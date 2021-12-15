@@ -7,7 +7,7 @@ From [Simply Delicious](https://www.justapinch.com/recipes/dessert/cookies/simpl
 - 1/2 cup firmly packed brown sugar
 - 1 tsp vanilla
 - 2 cups all-purpose flour
-- 1 3/4 cups mint chocolate chips
+- 1 cup (200g package) mint chocolate chips
 
 ## Directions
 1. Heat oven to 375F
