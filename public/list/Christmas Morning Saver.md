@@ -1,10 +1,10 @@
 ## Ingredients
 - ~16 slices of bread, crust removed
-- slices of ham or Canadian back bacon
-- slices of sharp cheddar cheese
+- ~200g sliced ham
+- enough grated cheddar to cover (1-2 cups?)
 - 6 eggs
-- 1/4 cup minced onion
-- 1/4 cup green pepper, finely chopped
+- 1/2 an onion, minced
+- 1 green pepper, minced
 - 1/2 teaspoon pepper
 - 1/2 teaspoon salt
 - 1 teaspoon dry mustard
