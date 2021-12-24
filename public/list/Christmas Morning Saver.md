@@ -4,7 +4,7 @@
 - enough grated cheddar to cover (1-2 cups?)
 - 6 eggs
 - 1/2 an onion, minced
-- 1 green pepper, minced
+- 1 green pepper, finely chopped
 - 1/2 teaspoon pepper
 - 1/2 teaspoon salt
 - 1 teaspoon dry mustard
