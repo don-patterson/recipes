@@ -1,11 +1,11 @@
-## Ingredients
+## Main Ingredients
 - 1 large rutabaga
 - 2 cooking apples (i.e. Cortland)
 - 2 tablespoons butter
 - 1/4 cup brown sugar
 - a dash of cinnamon
 
-## Ingredients
+## Topping Ingredients
 - 1/3 cup brown sugar
 - 1/3 cup flour
 - 2 tablespoons butter
