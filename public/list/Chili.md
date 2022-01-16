@@ -5,22 +5,22 @@
 - 1 (6 ounce) can tomato paste
 - 1 (~300ml) can sliced mushrooms
 - 1 large yellow onion, chopped
-- 3 stalks celery, chopped
+- 3-4 stalks celery, chopped
 - 2 bell peppers, seeded and chopped
-- 2 green chili peppers, seeded and chopped
-- 4 cubes beef bouillon
+- 2 green chilis or jalapenos, seeded and chopped
+- 1 tablespoon minced garlic
+- 2 cubes beef bouillon
 - 1/2 cup beer
 - 1/4 cup chili powder
 - 1 tablespoon Worcestershire sauce
-- 1 tablespoon minced garlic
+- 2 teaspoons hot pepper sauce (e.g. Tabasco)
 - 1 tablespoon dried oregano
 - 2 teaspoons ground cumin
-- 2 teaspoons hot pepper sauce (e.g. Tabasco)
 - 1 teaspoon dried basil
-- 1 teaspoon salt
-- 1 teaspoon ground black pepper
 - 1 teaspoon cayenne pepper
 - 1 teaspoon paprika
+- 1 teaspoon salt
+- 1 teaspoon ground black pepper
 
 ## Directions
 1. In a large stock pot, cook the ground beef until evenly browned and drain off extra grease
