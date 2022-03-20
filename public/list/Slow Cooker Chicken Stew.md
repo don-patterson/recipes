@@ -1,5 +1,5 @@
 ## Ingredients (main)
-- 1lb little potatoes
+- 1lb little potatoes, halved or quartered
 - 3 chicken breasts, cut into 1" pieces
 - 3 stalks celery, chopped
 - 1 medium onion, finely chopped
