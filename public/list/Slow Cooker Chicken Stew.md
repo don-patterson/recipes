@@ -16,7 +16,7 @@
 - 1/2 cup shredded parmesan cheese
 
 ## Directions
-1. Add all of the main ingredients to the slow cooker, and cook on low for 4-6 hours
+1. Add all of the main ingredients to the slow cooker, and cook on low for 8 hours (or high for 4 hours)
 2. Combine the cream, corn starch, and parmesan, and stir into the slow cooker
 3. Cook on high for 30 minutes, or until thickened
 4. Enjoy! (goes well with crusty bread)
