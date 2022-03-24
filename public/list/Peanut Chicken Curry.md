@@ -28,6 +28,6 @@ Modified version of [this recipe](https://www.honeygheeandme.com/2012/04/crockpo
 ## Directions (instant pot)
 - mix coconut milk, curry powder, curry paste, soy sauce, honey, red pepper flakes, ginger, peanut butter in the instant pot
 - add frozen chicken breasts and pressure cook for 6 minutes
-- quick release, shred the chicken (almost fully cooked) and add the onion, pepper, and snow peas
+- quick release, shred the chicken (almost fully cooked) and add the onion, bell pepper, basil, cilantro, and snow peas
 - pressure cook for 2 more minutes, and quick release
 - season with salt, pepper, lime juice to taste
