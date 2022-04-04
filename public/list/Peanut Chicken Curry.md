@@ -10,7 +10,7 @@ Modified version of [this recipe](https://www.honeygheeandme.com/2012/04/crockpo
 - 1 tbsp ginger (minced)
 - 3+ tbsp peanut butter
 - 1 onion (diced)
-- 2 bell peppers (diced)
+- 2 bell peppers (thinly sliced)
 - 1+ tbsp chopped basil leaves
 - 1/4 cup chopped cilantro
 - 1 bag of snow peas (~170g)
