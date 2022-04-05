@@ -22,7 +22,7 @@ Modified version of [this recipe](https://www.honeygheeandme.com/2012/04/crockpo
 - mix coconut milk, curry powder, curry paste, soy sauce, honey, red pepper flakes, ginger, peanut butter in the slow cooker
 - add the diced onion, bell pepper, basil, cilantro, and stir well
 - add the chicken breasts and fully immerse
-- cook on low for ~6 hours or high for ~4 hours, tossing in the peas during the last half hour
+- cook on low for ~6 hours or high for ~4 hours, tossing in the peas during the last 15-30 minutes
 - when cooked, shred the chicken, and season with salt, pepper, lime juice to taste
 
 ## Directions (instant pot)
