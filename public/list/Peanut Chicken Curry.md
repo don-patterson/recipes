@@ -1,4 +1,4 @@
-Modified version of [this recipe](https://www.honeygheeandme.com/2012/04/crockpot-chicken-peanut-curry/).
+Modified version of [this recipe](https://www.honeygheeandme.com/2012/04/crockpot-chicken-peanut-curry/), served over rice.
 
 ## Ingredients
 - 1 can (400ml) coconut milk (not the light kind!)
