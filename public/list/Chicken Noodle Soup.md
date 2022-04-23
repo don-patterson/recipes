@@ -1,21 +1,18 @@
 From [this site](https://www.gimmesomeoven.com/skinny-creamy-chicken-noodle-soup-recipe/)
 
 ## Ingredients
-- 1 Tbsp. olive oil
-- 1 small white onion, diced
-- 2 carrots, peeled and diced
-- 2 celery stalks, diced
+- 1 medium onion, diced
+- 2-3 carrots, peeled and diced
+- 2-3 celery stalks, diced
 - 2 cloves garlic, minced
 - 1/3 cup flour
 - 8 cups chicken broth
-- 3 cups cooked shredded chicken
-- 2 cups uncooked egg noodles or pasta (I used “wide” egg noodles)
-- 1 (12 oz.) can evaporated skim milk
-- 1 tsp. salt
-- 1/2 teaspoon dried oregano
-- 1/2 teaspoon ground black pepper
-- 1/4 teaspoon dried thyme
-- (optional garnish) chopped fresh parsley
+- 3 cooked chicken breasts, shredded
+- 300g uncooked broad egg noodles 
+- 12 oz evaporated milk (used 2%)
+- 1 teaspoon dried oregano
+- 1 teaspoon dried thyme
+- salt, pepper to taste
 
 ## Directions
 1. Heat oil over medium-high heat in a large stockpot or Dutch oven. Saute onion, carrots, and celery for 7 minutes
