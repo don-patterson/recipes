@@ -6,7 +6,7 @@
 - 10 large eggs
 - 1/3 cup cottage cheese
 - grated cheddar cheese
-- Italian seasoning
+- 1 tbsp Italian seasoning
 - salt and pepper
 - olive oil
 - butter or cooking spray
