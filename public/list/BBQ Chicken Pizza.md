@@ -1,4 +1,4 @@
-Loosely based on (this recipe)[https://sallysbakingaddiction.com/homemade-bbq-chicken-pizza/].
+Loosely based on [this recipe](https://sallysbakingaddiction.com/homemade-bbq-chicken-pizza/).
 ## Ingredients
 - pizza dough (usually store bought)
 - 1/2 cup (approx) BBQ sauce
