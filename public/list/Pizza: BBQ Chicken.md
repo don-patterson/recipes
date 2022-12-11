@@ -14,5 +14,5 @@ Loosely based on [this recipe](https://sallysbakingaddiction.com/homemade-bbq-ch
 2. Cover evenly with BBQ sauce, reserving a little sauce
 3. Toss chicken in reserved sauce, and spread on the pizza
 4. Spread cheese, onion, and pepper on the pizza
-5. Bake at 475 for 12-15 minutes
+5. Bake at 425 for 12-15 minutes
 6. Sprinkle with cilantro
