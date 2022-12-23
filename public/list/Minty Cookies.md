@@ -16,6 +16,9 @@ From [Simply Delicious](https://www.justapinch.com/recipes/dessert/cookies/simpl
 1. Mix flour into creamed mixture at low speed until just blended
 1. Stir in mint chocolate chips
 1. Form balls of 3-4cm diameter, and press slightly onto baking sheet
-1. Bake for 11 minutes, or until lightly browned
+1. Bake for 10 minutes, or until lightly browned
 1. Cool for 2 minutes on baking sheet, then move to cooling rack
+
+## Notes
+- this time we couldn't get the ingredients we wanted so we made it with regular Crisco and mint chips (i.e. not chocolate) and they were awesome 
 
