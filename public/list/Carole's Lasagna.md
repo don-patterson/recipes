@@ -10,7 +10,7 @@
 - 1 bay leaf
 - 1.5 tbsp basil
 - water, salt, pepper
-- baby spianch (optional)
+- baby spinach (optional)
 - noodles (we use "oven ready")
 - 500ml cottage cheese
 - 1 egg
