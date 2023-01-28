@@ -24,7 +24,7 @@
 5. Layer a 9" x 11" baking dish with:
    - noodles
    - 1/3 of the meat sauce
-   - moodles
+   - noodles
    - cottage cheese mixture
    - 1/3 of the meat sauce
    - noodles
