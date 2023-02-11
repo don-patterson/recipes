@@ -6,7 +6,7 @@
 - 1 (~300ml) can sliced mushrooms
 - 1 large yellow onion, chopped
 - 3-4 stalks celery, chopped
-- 2 bell peppers, seeded and chopped
+- 2 green bell peppers, seeded and chopped
 - 2 green chilis or jalapenos, seeded and chopped
 - 1 tablespoon minced garlic
 - 2 cubes beef bouillon
