@@ -5,7 +5,7 @@ import RestaurantIcon from "@mui/icons-material/Restaurant";
 import {Repo} from "@deek80/gh-reader";
 import {Markdown, Picker} from "./components";
 
-const repo = new Repo("deek80/recipes");
+const repo = new Repo("don-patterson/recipes");
 
 export default () => {
   const [recipes, setRecipes] = useState([]);
