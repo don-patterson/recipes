@@ -1,7 +1,7 @@
 Inspired by [this recipe](https://choosingchia.com/15-minute-sesame-ginger-noodles/) but with extra ingredients.
 
 ## Ingredients
-- 1.5 lb groud pork
+- 1 lb groud pork
 - 2-3 carrots
 - 3-4 bok choy things (heads? bulbs?)
 - 2 green onions
