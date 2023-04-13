@@ -2,7 +2,7 @@ From [this site](https://www.gimmesomeoven.com/skinny-creamy-chicken-noodle-soup
 
 ## Ingredients
 - 1 medium onion, diced
-- 2-3 carrots, peeled and diced
+- 2-3 carrots, thinly sliced circles or half circles
 - 2-3 celery stalks, diced
 - 2 cloves garlic, minced
 - 1/3 cup flour
