@@ -1,7 +1,7 @@
 From this [site](https://www.myorganizedchaos.net/2018/06/dill-pickle-pasta-salad)
 
 ## Ingredients
-- 400g cups shell pasta (or ~4.5 cups, uncooked)
+- 400g shell pasta (or ~4.5 cups, uncooked)
 - 3/4 cup pickles, sliced
 - 2/3 cup cheddar cheese, diced
 - 1/4 cup green onion, chopped
