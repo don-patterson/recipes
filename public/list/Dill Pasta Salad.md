@@ -1,10 +1,10 @@
-From this [site](https://www.myorganizedchaos.net/2018/06/dill-pickle-pasta-salad)
+From this [site](https://www.myorganizedchaos.net/2018/06/dill-pickle-pasta-salad), but with a little more dill!
 
 ## Ingredients
 - 400g shell pasta (or ~4.5 cups, uncooked)
 - 1 cup pickles, diced
 - 2/3 cup cheddar cheese, diced
-- 1/4 cup green onion, sliced
+- 3 green onions, thinly sliced
 - Dressing:
   - 2/3 cup mayonaise
   - 1/3 cup sour cream
