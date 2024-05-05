@@ -16,7 +16,7 @@
 - 1/2 cup shredded parmesan cheese
 
 ## Directions
-1. Layer the slow cooker with: potatoes, carrots, celery, onion, chicken
+1. Layer the slow cooker with: potatoes, carrots, celery, onion, garlic, and chicken
 2. Sprinkle thyme and parsley over top, and pour in the chicken broth
 3. Cook on low for 8 hours (or high for 4 hours)
 4. Afterward, combine the cream, corn starch, and parmesan, and stir into the slow cooker
