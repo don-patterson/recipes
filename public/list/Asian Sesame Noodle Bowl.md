@@ -11,7 +11,7 @@ Inspired by [this recipe](https://choosingchia.com/15-minute-sesame-ginger-noodl
 - 1/3 cup soy sauce
 - 3 tbsp maple syrup
 - 1 tbsp sesame oil
-- 1 tsp crushed red chillis (2 for medium)
+- crushed red chillis (optional)
 - optional: sesame seeds
 
 ## Prep
@@ -19,7 +19,7 @@ Inspired by [this recipe](https://choosingchia.com/15-minute-sesame-ginger-noodl
 2. Chop the bok choy into 1 inch pieces
 3. Thinly slice the green onions
 4. Mince the garlic and ginger
-5. Mix the garlic, ginger, soy sauce, maple syrup, sesame oil, and chills in a bowl and set aside
+5. Mix the garlic, ginger, soy sauce, maple syrup, sesame oil in a bowl and set aside
 
 ## Cook
 1. Optional: toast the sesame seeds in a dry pan, and pour into a bowl or plate for later
@@ -29,4 +29,4 @@ Inspired by [this recipe](https://choosingchia.com/15-minute-sesame-ginger-noodl
 5. Add the pork, bok choy, and green onions, and cook until tenter (about 8 minutes)
 6. Meanwhile, rinse the rice noodles and then submerge in a pot of boiling water. Turn off the heat and cover, and let stand for 4 minutes
 7. When the noodles and bok choy are done, mix the noodles in and stir until coated
-8. Serve, and sprinkle sesame seeds on top if desired
+8. Serve, sprinkled with sesame seeds and crushed chillis if desired
