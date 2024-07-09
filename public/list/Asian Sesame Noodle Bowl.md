@@ -11,8 +11,7 @@ Inspired by [this recipe](https://choosingchia.com/15-minute-sesame-ginger-noodl
 - 1/3 cup soy sauce
 - 3 tbsp maple syrup
 - 1 tbsp sesame oil
-- crushed red chillis (optional)
-- optional: sesame seeds
+- optional: sesame seeds, crushed red chillis
 
 ## Prep
 1. Halve (or quarter the thick parts) the carrots lengthwise and thinly slice into half moons
