@@ -9,9 +9,9 @@ From this [site](https://www.myorganizedchaos.net/2018/06/dill-pickle-pasta-sala
   - 2/3 cup mayonaise
   - 1/3 cup sour cream
   - 1/3 cup pickle juice
-  - 1.5 tbsp fresh dill (or 1-2 tsp dried)
+  - 2 tbsp fresh dill
   - 1 tsp celery seed
-  - 1/2 tbsp pepper
+  - 1 tsp pepper
 
 
 ## Directions
