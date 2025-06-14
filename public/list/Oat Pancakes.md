@@ -1,7 +1,6 @@
 ## Ingredients
 - 2 medium ripe bananas
 - 1.5 cups rolled oats (we use Quaker "quick oats")
-- (optional) 1/3 cup coconut
 - 2 teaspoons baking powder
 - 1 teaspoon cinnamon
 - 1 teaspoon vanilla extract
@@ -14,4 +13,4 @@
 
 ## Notes
 - these aren't as firm as regular pancakes so you have to make them kinda small in order to flip them easily, and they fall apart if you flip them too early
-- they go well with peanut butter and syrup
+- they go well with peanut butter or yogurt
