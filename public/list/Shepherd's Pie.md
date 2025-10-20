@@ -11,7 +11,8 @@ and some experimentation. Fills an 11x13 baking dish.
 - 2 tbsp flour
 - ~1/2 cup beef (or chicken maybe?) broth
 - ~1/2 cup red wine
-- 1 tsp thyme
+- 1 tsp dried thyme
+- 1/2 tsp dried rosemary
 - 1 tsp smoked paprika
 - 1 tbsp fresh sage (finely chopped)
 - 2.5 lb potatoes (cubed)
@@ -27,7 +28,7 @@ and some experimentation. Fills an 11x13 baking dish.
 - stir in the flour until it's dissolved with no lumps
 - add the meat, tomato sauce, and worchestershire, and cook until fully browned
 - add the broth and simmer until thickened
-- add thyme, smoked paprika, frozen veggies, salt and pepper
+- add thyme, rosemary, smoked paprika, frozen veggies, salt and pepper
 - spread meat and veggie mixuture in a 11x13 glass baking dish
 - carefully spread the mashed potatoes on top, flattening with a rubber spatula
 - bake at 375 for 30 minutes
