@@ -2,13 +2,13 @@ From [this site](https://www.gimmesomeoven.com/skinny-creamy-chicken-noodle-soup
 
 ## Ingredients
 - 1 medium onion, diced
-- 2-3 carrots, thinly sliced circles or half circles
-- 2-3 celery stalks, diced
+- 2-3 carrots, halved/quartered and thinly sliced
+- 2-3 celery stalks, thinly sliced
 - 2 cloves garlic, minced
 - 1/3 cup flour
 - 8 cups chicken broth
 - 3 cooked chicken breasts, shredded
-- 300g uncooked broad egg noodles 
+- 300-400g uncooked broad egg noodles 
 - 12 oz evaporated milk (used 2%)
 - 1 tablespoon dried oregano
 - 1 tablespoon dried thyme
