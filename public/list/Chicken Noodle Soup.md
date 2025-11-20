@@ -7,7 +7,7 @@ From [this site](https://www.gimmesomeoven.com/skinny-creamy-chicken-noodle-soup
 - 2 cloves garlic, minced
 - 1/3 cup flour
 - 8 cups chicken broth
-- 3 cooked chicken breasts, shredded
+- 2-3 cooked chicken breasts, shredded
 - 300-400g uncooked broad egg noodles 
 - 12 oz evaporated milk (used 2%)
 - 1 tablespoon dried oregano
