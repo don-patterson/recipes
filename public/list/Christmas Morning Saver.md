@@ -27,5 +27,5 @@
 ## Directions (Morning of)
 1. Melt 1/2 cup of butter, and pour over egg sandwiches.
 1. Cover with Special K.
-1. Bake for 45 minutes, at 325F.
+1. Bake for 45 minutes, at 350F.
 1. Let stand for 10 minutes before serving.
