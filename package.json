@@ -4,25 +4,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@deek80/gh-reader": "^3.0",
-    "@mui/icons-material": "^5.1.1",
-    "@mui/material": "^5.1.1",
-    "dompurify": "^2.3.3",
-    "marked": "^4.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3"
+    "@deek80/gh-reader": "^4.0.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^6.5.0",
+    "@mui/material": "^6.5.0",
+    "dompurify": "^3.4.2",
+    "marked": "^15.0.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "scripts": {
-    "build": "react-scripts build",
+    "build": "vite build",
     "deploy": "gh-pages -o don -d build",
     "format": "prettier --write src package.json",
-    "predeploy": "react-scripts build",
-    "start": "react-scripts start"
+    "predeploy": "vite build",
+    "start": "vite"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "prettier": "^2.4.1"
+    "@vitejs/plugin-react": "^4.7.0",
+    "gh-pages": "^6.3.0",
+    "prettier": "^3.8.3",
+    "vite": "^6.4.2"
   },
   "prettier": {
     "arrowParens": "avoid",
