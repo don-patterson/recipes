@@ -1,10 +1,10 @@
 ## Ingredients
 - ~16 slices of bread, crust removed
-- slices of ham or Canadian back bacon
-- slices of sharp cheddar cheese
+- ~200g sliced ham
+- enough grated cheddar to cover (1-2 cups?)
 - 6 eggs
-- 1/4 cup minced onion
-- 1/4 cup green pepper, finely chopped
+- 1/2 an onion, minced
+- 1 green pepper, finely chopped
 - 1/2 teaspoon pepper
 - 1/2 teaspoon salt
 - 1 teaspoon dry mustard
@@ -27,5 +27,5 @@
 ## Directions (Morning of)
 1. Melt 1/2 cup of butter, and pour over egg sandwiches.
 1. Cover with Special K.
-1. Bake for 45 minutes, at 325F.
+1. Bake for 45 minutes, at 350F.
 1. Let stand for 10 minutes before serving.

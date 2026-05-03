@@ -1,7 +1,7 @@
 ## Ingredients
 - 2 packs of PC 4 cheese risotto (2x170g)
-- 1 butternut squash (~1 pound, cubed)
-- 25 shrimp
+- 1 small (1/2 large) butternut squash (~5 cups, cubed)
+- 25-35 shrimp (~400g)
 - garlic (or garlic powder)
 - salt
 - pepper

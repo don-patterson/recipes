@@ -19,5 +19,7 @@
 1. In a medium bowl, stir together flour, sour cream and water, making a paste.
 1. Whisk sour cream mixture (a couple tablespoons at a time) into soup.
 1. Add pickle juice, Old Bay, salt, pepper and cayenne.
-1. Cook 5 more minutes and remove from heat.
+1. Blend (optional) then cook 5 more minutes and remove from heat.
 
+## Notes
+- We blend this with an immersion blender right in the pot. This way you don't have to be careful about the shape/size of veggie chunks, and it doesn't matter if the flour paste is clumping a bit.

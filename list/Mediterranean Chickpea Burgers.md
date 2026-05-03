@@ -8,7 +8,7 @@
 - 1 tablespoon smoked paprika
 - 2 teaspoons turmeric
 - 1 teaspoon sea salt
-- 6-8 sun dried tomatoes, minced
+- 6-8 sun dried tomatoes, minced (used a 210ml jar)
 - 2 teaspoons minced fresh rosemary
 - 1 small bunch Italian parsley, chopped
 - 1/2 small onion, minced
